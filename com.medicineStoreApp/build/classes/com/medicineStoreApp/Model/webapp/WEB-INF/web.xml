@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID">
+	<display-name>com.medicineStoreApp</display-name>
+	<servlet>
+		<servlet-name>RequestControllerServlet</servlet-name>
+		<display-name>RequestControllerServlet</display-name>
+		<description>to handle request</description>
+		<servlet-class>com.medicineStoreApp.controller.RequestControllerServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DbHandlerServlet</servlet-name>
+		<display-name>DbHandlerServlet</display-name>
+		<description></description>
+		<servlet-class>com.medicineStoreApp.dbHandler.DbHandlerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequestControllerServlet</servlet-name>
+		<url-pattern>/RequestControllerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DbHandlerServlet</servlet-name>
+		<url-pattern>/DbHandlerServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>jsp/booklogin.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

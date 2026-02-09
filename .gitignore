@@ -1,0 +1,14 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Build output
+bin/
+target/
+
+# Server
+Servers/
+
+# Logs
+*.log
